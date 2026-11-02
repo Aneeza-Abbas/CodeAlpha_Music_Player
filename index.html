@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melody - Your Music Space</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="music-container">
+      <header>
+        <h1>🎵 Melody</h1>
+        <p>Your Music Space</p>
+      </header>
+
+      <section class="player">
+        <div class="album-art" id="album-art">
+          <span>♫</span>
+        </div>
+
+        <div class="song-info">
+          <h2 id="song-title">Song 1</h2>
+          <p id="song-artist">SoundHelix</p>
+        </div>
+
+        <audio id="audio"></audio>
+
+        <div class="progress-container">
+          <span id="current-time">0:00</span>
+          <input type="range" id="progress" value="0" min="0" max="100" />
+          <span id="duration">0:00</span>
+        </div>
+
+        <div class="controls">
+          <button id="prev" title="Previous">⏮</button>
+          <button id="play" class="play-button" title="Play">▶</button>
+          <button id="next" title="Next">⏭</button>
+        </div>
+
+        <div class="volume-container">
+          <label for="volume">🔊 Volume</label>
+          <input
+            type="range"
+            id="volume"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.7"
+          />
+        </div>
+
+        <p id="status" class="status">Ready to play</p>
+      </section>
+
+      <section class="playlist-section">
+        <h2>My Playlist</h2>
+        <div id="playlist"></div>
+      </section>
+
+      <footer>
+        <p>Made with ❤️ using HTML, CSS and JavaScript</p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
